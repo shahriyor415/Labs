@@ -1,0 +1,124 @@
+:imagesdir: Images
+:toc:
+:toc-title: Оглавление
+
+[.text-center]
+МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ +
+Федеральное государственное автономное образовательное учреждение высшего образования +
+«Южно-Уральский государственный университет» +
+(национальный исследовательский университет) +
+Высшая школа электроники и компьютерных наук +
+Кафедра «Информационно-измерительная техника»
+
+[.text-center]
+
+Отчет по лабораторной работе №2
+
+[.text-right]
+Выполнили: +
+студент группы КЭ-415 +
+Хайдарзода Ш.Н.
+
+
+
+== Задание к работе
+
+    а. Сделать бегущий огонь из 4 светодиодов, подключенных к портам C.5, C.8, C9, A.5
+    б. Заготовка лежит с настройками портов светодиодов лежит в https://github.com/lamer0k/stm32Labs/tree/master/Lab1
+    в. Сделать отчет как обычно
+
+== Написание программы для реализации "бегущего огня"
+Напишем программу, которая реализует "бегущий огонь", т.е. последовательно зажигаются 4 светодиода. Результат представлен ниже.
+
+[source, c]
+#include "rccregisters.hpp" // for RCC
+#include "gpiocregisters.hpp" //for GPIOC
+std::uint32_t SystemCoreClock = 16'000'000U;
+extern "C" {
+int __low_level_init(void)
+{
+//Switch on external 16 MHz oscillator
+RCC::CR::HSION::On::Set();
+while (RCC::CR::HSIRDY::NotReady::IsSet())
+{
+  }
+  //Switch system clock on external oscillator
+  RCC::CFGR::SW::Hsi::Set();
+  while (!RCC::CFGR::SWS::Hsi::IsSet())
+  {
+  }
+  RCC::APB2ENR::SYSCFGEN::Enable::Set();
+  return 1;
+}
+}
+int delay(int cycles)
+{
+  for (int i =0; i< cycles; ++i)
+    {
+      asm volatile ("");
+    }
+}
+int main()
+{
+{
+for (;;)
+  {
+    RCC::AHB1ENR::GPIOCEN::Enable::Set();
+    GPIOC::MODER::MODER5::Output::Set();
+    GPIOC::ODR::ODR5::High::Set();
+    delay(1000000);
+    GPIOC::ODR::ODR5::Low::Set();
+    delay(1000000);
+    RCC::AHB1ENR::GPIOCEN::Enable::Set();
+    GPIOC::MODER::MODER8::Output::Set();
+    GPIOC::ODR::ODR8::High::Set();
+    delay(1000000);
+    GPIOC::ODR::ODR8::Low::Set();
+    delay(1000000);
+    RCC::AHB1ENR::GPIOCEN::Enable::Set();
+    GPIOC::MODER::MODER9::Output::Set();
+    GPIOC::ODR::ODR9::High::Set();
+    delay(1000000);
+    GPIOC::ODR::ODR9::Low::Set();
+    delay(1000000);
+    RCC::AHB1ENR::GPIOAEN::Enable::Set();
+    GPIOA::MODER::MODER5::Output::Set();
+    GPIOA::ODR::ODR5::High::Set();
+    delay(1000000);
+    GPIOA::ODR::ODR5::Low::Set();
+    delay(1000000);
+  }
+return 1;
+}
+}
+
+При выполнении программы обнаруживается ошибка. Ошибка представлена на рисунке 1.
+
+image::b_Y6rZVZzpQ.jpg[]
+
+Рисунок 1 - Ошибка
+
+Видим, что GPIOA, отвечающий за четвертый светодиод, не распознается компилятором. Следовательно, нужно подключить дополнительную библиотеку gpioaregisters. Результат представлен на риснуке 2.
+
+image::G349hIkEMCk.jpg[]
+
+Рисунок 2 - Подключение библиотеки
+
+== Подключение платы к компьютеру
+Подключим отладчик к плате, и подключим плату к компьютеру. Результат представлен на рисунке 3.
+
+image::image-2021-09-30-23-18-52-173.png[]
+
+Рисунок 3 - Подключенная плата
+
+Светодиод на отладчике горит красным, что говорит нам о том, что плата не прошита.
+
+== Прошивка платы
+Для прошивки платы, создадим новый проект, где выберем нужный микроконтроллер.
+
+После данных действий, успешно прошиваем плату. Можем убедиться в этом, увидев поочередно горящие светодиоды на плате (бегущий огонь).
+Результат представлен на рисунке 4.
+
+image::video_2021-10-05_11-49-37.gif[]
+
+Рисунок 4 - Прошитая плата
