@@ -1,0 +1,130 @@
+:imagesdir: Images
+:toc:
+:toc-title: Оглавление
+
+[.text-center]
+МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ +
+Федеральное государственное автономное образовательное учреждение высшего образования +
+«Южно-Уральский государственный университет» +
+(национальный исследовательский университет) +
+Высшая школа электроники и компьютерных наук +
+Кафедра «Информационно-измерительная техника»
+
+[.text-center]
+
+Отчет по лабораторной работе №4
+
+[.text-right]
+Выполнили: +
+студент группы КЭ-415 +
+Хайдарзода Ш.Н.
+
+
+
+== Задание к работе
+    а. Сделать тоже самое, что и в прошлом задании, за одним исключением, см пункт 2
+    б. Тактирование системной частоты произвести с модуля PLL, так, чтобы системная частота была 30 МГц.
+
+
+== Рассчет частоты
+
+Подбор частоты описывается следующей формулой:
+
+    f = f(PLL clock input) * (PLLN / PLLM) / PLLQ
+
+В документации по нашей плате, можем увидеть, что входная частота равна 16 МГц, следовательно, f(PLL clock input) = 16 МГц.
+
+Также написано, что при работе от USB требуется частота 48 МГц.
+
+Также можем увидеть, что PLLQ принимает стандартное значение, равное 2, следовательно, PLLP = 2.
+
+Следовательно, рассчитаем параметры PLLN и PLLM и примем их равными соответственно 60 МГц и 16 МГц.
+
+== Написание программы для реализации моргания светодиодов
+Напишем программу, которая реализует моргающие светодиоды, т.е. одновременно зажигаются 4 светодиода.
+
+Также подключим библиотеки "gpioaregisters.hpp" и "gpiocregisters.hpp" для того, чтобы зажигались все светодиоды.
+
+Результат представлен ниже.
+
+[source, c]
+#include "rccregisters.hpp" // for RCC
+#include "gpiocregisters.hpp" //for GPIOC
+#include "gpioaregisters.hpp" //for GPIOA
+std::uint32_t SystemCoreClock = 16'000'000U;
+extern "C"
+   {
+       int __low_level_init(void)
+          {
+                //Switch on external 16 MHz oscillator
+                RCC::CR::HSION::On::Set();
+                while (RCC::CR::HSIRDY::NotReady::IsSet())
+                    {
+                    }
+                //Switch system clock on external oscillator
+                RCC::PLLCFGR::PLLN0::Set(60);
+                RCC::PLLCFGR::PLLM0::Set(16);
+                RCC::CR::PLLON::On::Set();
+                while (RCC::CR::PLLRDY::Unclocked::IsSet())
+                {
+                }
+                RCC::CFGR::SW::Pll::Set();
+                while (!RCC::CFGR::SWS::Pll::IsSet())
+                {
+                }
+             return 1;
+          }
+   }
+int delay(int cycles)
+{
+   for (int i =0; i< cycles; ++i)
+      {
+          asm volatile ("");
+      }
+}
+int main()
+{
+    RCC::AHB1ENR::GPIOAEN::Enable::Set();
+    RCC::AHB1ENR::GPIOCEN::Enable::Set();
+    GPIOA::MODER::MODER5::Output::Set();
+    GPIOC::MODER::MODER8::Output::Set();
+    GPIOC::MODER::MODER9::Output::Set();
+    GPIOC::MODER::MODER5::Output::Set();
+      {
+         for (;;)
+            {
+            uint32_t* ptrPaOdr = reinterpret_cast<uint32_t*>(0x40020014);
+            *ptrPaOdr ^= static_cast<uint32_t>(1 << 5);
+            uint32_t* ptrPcOdr = reinterpret_cast<uint32_t*>(0x40020814);
+            *ptrPcOdr ^= static_cast<uint32_t>(1 << 9);
+            *ptrPcOdr ^= static_cast<uint32_t>(1 << 8);
+            *ptrPcOdr ^= static_cast<uint32_t>(1 << 5);
+            delay(1500000);
+            *ptrPaOdr ^= static_cast<uint32_t>(1 << 5);
+            *ptrPcOdr ^= static_cast<uint32_t>(1 << 9);
+            *ptrPcOdr ^= static_cast<uint32_t>(1 << 8);
+            *ptrPcOdr ^= static_cast<uint32_t>(1 << 5);
+            delay(1500000);
+            }
+        return 1;
+      }
+}
+
+
+== Подключение платы к компьютеру
+Подключим отладчик к плате, и подключим плату к компьютеру. Результат представлен на рисунке 1.
+
+image::image-2021-09-30-23-18-52-173.png[]
+
+Рисунок 1 - Подключенная плата
+
+Светодиод на отладчике горит красным, что говорит нам о том, что плата не прошита.
+
+== Прошивка платы
+
+Успешно прошиваем плату. Можем убедиться в этом, увидев одновременно горящие светодиоды на плате.
+Результат представлен на рисунке 2.
+
+image::333.gif[]
+
+Рисунок 2 - Прошитая плата
