@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\Rabota_1.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\Rabota_2\Rabota_2.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\Rabota_3\Rabota_3.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\Rabota_4\Rabota_4.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>
