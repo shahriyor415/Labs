@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="620cf634-2074-4c1c-9279-50926e7279d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/CortexLib/AbstractHardware/InterruptHandler/interrupthandler.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CortexLib/AbstractHardware/InterruptHandler/interrupthandler.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CortexLib/AbstractHardware/Registers/CortexM4/FieldValues/nvicstirfieldvalues.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CortexLib/AbstractHardware/Registers/CortexM4/FieldValues/nvicstirfieldvalues.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CortexLib/cmake-build-release-mingw/CMakeFiles/3.16.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CortexLib/cmake-build-release-mingw/CMakeFiles/3.16.0/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/First.pbd" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/First.pbd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/First.pbd.browse" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/First.pbd.browse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/First.pbw" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/First.pbw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/main.pbi" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/main.pbi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/main.pbi.dep" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/main.pbi.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/main.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/Debug/BrowseInfo/main.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/First.dep" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/First.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/First.eww" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/First.eww" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.cspy.bat" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.cspy.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.cspy.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.cspy.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.driver.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.driver.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.general.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.Debug.general.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.dnx" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.dnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.wsdt" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFirstProjct/settings/First.wsdt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/MyFreeProject.pbd" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/MyFreeProject.pbd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/MyFreeProject.pbd.browse" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/MyFreeProject.pbd.browse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/MyFreeProject.pbw" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/MyFreeProject.pbw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/main.pbi" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/main.pbi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/main.pbi.dep" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/main.pbi.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/main.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/BrowseInfo/main.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/Exe/MyFreeProject.out" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/Exe/MyFreeProject.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/List/MyFreeProject.map" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/List/MyFreeProject.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/Obj/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Debug/Obj/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/MyFreeProject.dep" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/MyFreeProject.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.Debug.cspy.bat" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.Debug.cspy.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.Debug.cspy.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.Debug.cspy.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.Debug.general.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.Debug.general.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.dbgdt" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.dbgdt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.dnx" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/settings/MyFreeProject.dnx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyFreeProject/Отчёт3.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyFreeProject/Отчёт3.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/MyNewProject.pbd" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/MyNewProject.pbd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/MyNewProject.pbd.browse" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/MyNewProject.pbd.browse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/MyNewProject.pbw" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/MyNewProject.pbw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/main.pbi" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/main.pbi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/main.pbi.dep" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/main.pbi.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/main.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/BrowseInfo/main.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/Exe/MyNewProject.out" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/Exe/MyNewProject.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/Exe/MyNewProject.sim" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/Exe/MyNewProject.sim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/List/MyNewProject.map" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/List/MyNewProject.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/Debug/Obj/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/Debug/Obj/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/MyNewProject.dep" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/MyNewProject.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/MyNewProject.ewp" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/MyNewProject.ewp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.cspy.bat" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.cspy.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.cspy.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.cspy.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.driver.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.driver.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.general.xcl" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.Debug.general.xcl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.dbgdt" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.dbgdt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.dnx" beforeDir="false" afterPath="$PROJECT_DIR$/POIP/MyNewProject/settings/MyNewProject.dnx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="two_kurs" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4a0b098d-0976-4e3e-8671-9e5a8eab1c72" />
+        <option name="url" value="https://github.com/stalkyr232/dlu-kursocha.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O6HeDA9g2ig79HMx8PrNJUXVxX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="620cf634-2074-4c1c-9279-50926e7279d7" name="Changes" comment="" />
+      <created>1680874205131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680874205131</updated>
+      <workItem from="1680874206927" duration="1520000" />
+      <workItem from="1680939870827" duration="2271000" />
+      <workItem from="1680951483749" duration="9566000" />
+      <workItem from="1681560343631" duration="654000" />
+      <workItem from="1682075478156" duration="10746000" />
+      <workItem from="1682771071886" duration="1211000" />
+      <workItem from="1683290934493" duration="6384000" />
+      <workItem from="1683363492668" duration="1834000" />
+      <workItem from="1683370233748" duration="3889000" />
+      <workItem from="1683737869115" duration="454000" />
+      <workItem from="1684591958069" duration="8832000" />
+      <workItem from="1684931497598" duration="6152000" />
+      <workItem from="1685639664698" duration="98000" />
+      <workItem from="1685639793934" duration="28000" />
+      <workItem from="1685639829746" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/two_kurs" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
